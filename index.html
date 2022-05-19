@@ -6,74 +6,107 @@
     <title>CyklotrasyBA</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <!-- HEADER-->
   <body>
-    <div class="header">
-      <div class="text">
+    <div class="container">
+      <div class="header">
         <div class="logo">
           <img class="logoimg" src="images/a.png" />
         </div>
         <div class="buttons">
-          <a href="#home">Cyklotrasy</a>
-          <a href="#contact">Mapy</a>
-          <a href="#about">O nas</a>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="select">Cyklotrasy</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="/mestska.html">Mestská</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+          <a class="select" href="#contact">Mapy</a>
+          <a class="select" href="#about">O nas</a>
+        </div>
+        <div class="searchbar">
+          <input
+            class="search"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search"
+          />
         </div>
       </div>
-
-      <div class="searchbar">
-        <input
-          class="search"
-          type="search"
-          placeholder="Search..."
-          aria-label="Search"
-        />
+      <!-- CONTENT-->
+      <div class="content-text">
+        <h1 class="text">Naše dnešné tipy:</h1>
       </div>
+      <div class="page-content">
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Štefánikova mohyla</h2>
+            <p class="copy">
+              Prijemné miesto v okolí Ivanky pri Dunaji, ľahko dostupné aj z
+              deťmi. Vhodné na relax a rekráciu.
+            </p>
+            <button class="btn" onclick="window.location.href='mestska.html';">
+              Čítaj viac...
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Hrad Devín</h2>
+            <p class="copy">
+              Známa historická lokalita Bratislavy. Cyklotrasy pre rodinu ale aj
+              pre tých športovešjích.
+            </p>
+            <button class="btn">Čítaj viac...</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Biely kríž</h2>
+            <p class="copy">
+              Náročnejšia a kopcovitá trasa poteší každého horského cyklistu.
+            </p>
+            <button class="btn">Čítaj viac...</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Čilistov</h2>
+            <p class="copy">
+              Táto krásna lokalita ležiaca na dunajskej cyklotrase smerom do
+              Gabčíkova.
+            </p>
+            <button class="btn">Čítaj viac...</button>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <footer>
+        <p>Author: Ur mom</p>
+        <p><a href="adamjokel2004@gmail.com">text</a></p>
+      </footer>
     </div>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
 
-    <main class="page-content">
-      <div class="card">
-        <div class="content">
-          <h2 class="title">Štefánikova mohyla</h2>
-          <p class="copy">
-            Prijemné miesto v okolí Ivanky pri Dunaji, ľahko dostupné aj z
-            deťmi. Vhodné na relax a rekráciu.
-          </p>
-          <button class="btn">Čítaj viac...</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="content">
-          <h2 class="title">Hrad Devín</h2>
-          <p class="copy">
-            Známa historická lokalita Bratislavy. Cyklotrasy pre rodinu ale aj
-            pre tých športovešjích.
-          </p>
-          <button class="btn">Čítaj viac...</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="content">
-          <h2 class="title">Biely kríž</h2>
-          <p class="copy">
-            Náročnejšia a kopcovitá trasa poteší každého horského cyklistu.
-          </p>
-          <button class="btn">Čítaj viac...</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="content">
-          <h2 class="title">Čilistov</h2>
-          <p class="copy">
-            Táto krásna lokalita ležiaca na dunajskej cyklotrase smerom do
-            Gabčíkova.
-          </p>
-          <button class="btn">Čítaj viac...</button>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <p>Author: Ur mom</p>
-      <p><a href="adamjokel2004@gmail.com">text</a></p>
-    </footer>
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".select")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
   </body>
 </html>
