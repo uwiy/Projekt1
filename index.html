@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CyklotrasyBA</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/indexstyle.css" />
   </head>
   <!-- HEADER-->
   <body>
@@ -14,24 +14,27 @@
           <img class="logoimg" src="images/a.png" />
         </div>
         <div class="buttons">
-          <div class="dropdown">
-            <button onclick="myFunction()" class="select">Cyklotrasy</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="/mestska.html">Mestské trasy</a>
-              <a href="#about">Horské trasy</a>
-              <a href="#contact">Nenáročné trasy</a>
-            </div>
-          </div>
-          <a class="select" href="#contact">Mapy</a>
-          <a class="select" href="#about">O nas</a>
-        </div>
-        <div class="searchbar">
-          <input
-            class="search"
-            type="search"
-            placeholder="Search..."
-            aria-label="Search"
-          />
+          <nav class="menu">
+            <ol>
+              <li class="menu-item"><a href="/index.html">Home</a></li>
+              <li class="menu-item">
+                <a href="#0">Cyklotrasy</a>
+                <ol class="sub-menu">
+                  <li class="menu-item">
+                    <a href="/mestska.html">Mestské Cyklotrasy</a>
+                  </li>
+                  <li class="menu-item"><a href="#0">Horské Cyklotrasy</a></li>
+                  <li class="menu-item">
+                    <a href="#0">Nenáročné Cyklotrasy</a>
+                  </li>
+                </ol>
+              <li class="menu-item"><a href="#0">About</a></li>
+              
+              </li>
+
+              <li class="menu-item"><a href="#0">Contact</a></li>
+            </ol>
+          </nav>
         </div>
       </div>
       <!-- CONTENT-->
@@ -84,7 +87,7 @@
       <!-- FOOTER -->
       <footer>
         <p>Author: Ur mom</p>
-        <p><a href="adamjokel2004@gmail.com">text</a></p>
+        <p><a href="">text</a></p>
       </footer>
     </div>
     <script>

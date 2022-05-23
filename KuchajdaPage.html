@@ -4,44 +4,46 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CyklotrasyBA</title>
-    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="/css/locality_style.css" />
   </head>
   <!-- HEADER-->
   <body>
     <div class="container">
       <div class="header">
+        
         <div class="logo">
-          <p>
-            <a href="index.html">
-              <img class="logoimg" src="images/a.png" />
-            </a>
-          </p>
+          <img class="logoimg" src="images/a.png" /> 
         </div>
         <div class="buttons">
-          <div class="dropdown">
-            <button onclick="myFunction()" class="select">Cyklotrasy</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="/mestska.html">Mestské trasy</a>
-              <a href="#about">Horské trasy</a>
-              <a href="#contact">Nenáročné trasy</a>
-            </div>
-          </div>
-          <a class="select" href="#contact">Mapy</a>
-          <a class="select" href="#about">O nas</a>
-        </div>
-        <div class="searchbar">
-          <input
-            class="search"
-            type="search"
-            placeholder="Search..."
-            aria-label="Search"
-          />
+          <nav class="menu">
+            <ol>
+              <li class="menu-item"><a href="/index.html">Home</a></li>
+              <li class="menu-item">
+                <a href="#0">Cyklotrasy</a>
+                <ol class="sub-menu">
+                  <li class="menu-item">
+                    <a href="/mestska.html">Mestské Cyklotrasy</a>
+                  </li>
+                  <li class="menu-item"><a href="#0">Horské Cyklotrasy</a></li>
+                  <li class="menu-item">
+                    <a href="#0">Nenáročné Cyklotrasy</a>
+                  </li>
+                </ol>
+              <li class="menu-item"><a href="#0">About</a></li>
+              
+              </li>
+
+              <li class="menu-item"><a href="#0">Contact</a></li>
+            </ol>
+          </nav>
         </div>
       </div>
       <!-- CONTENT-->
+      
       <div class="content-text">
         <h1 class="text">Jazero Kuchajda:</h1>
       </div>
+    
       <div class="stats">
         <div class="stats_card">
           <div class="card_img">
@@ -70,32 +72,41 @@
       </div>
       <div class="page-content">
         <div class="content_card">
-          <img class="photo" src="images/kuchajda2.png" />
-          <iframe
-            class="photo"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.923304808777!2d17.14488795!3d48.1695594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ec69b9573b1%3A0xc577f37890fe575!2sKuchajda!5e0!3m2!1ssk!2ssk!4v1653037975369!5m2!1ssk!2ssk"
-            width="400"
-            height="300"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          
+          <div class="card_photo">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.923304808777!2d17.14488795!3d48.1695594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8ec69b9573b1%3A0xc577f37890fe575!2sKuchajda!5e0!3m2!1ssk!2ssk!4v1653037975369!5m2!1ssk!2ssk"
+              width="300"
+              height="200"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <img
+              class="photo"
+              src="images/kuchajda2.png"
+              width="300px"
+              height="200px"
+            />
+          </div>
           <div class="content_text">
             <h1 class="title">Niečo o lokalite:</h1>
-            <h1 class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              expedita quo accusamus. Rem quidem, cum vel accusantium omnis amet
-              facilis quia reiciendis fugit accusamus sunt architecto excepturi
-              dolorem maxime voluptatum.
-            </h1>
+            <p class="description">
+              Kuchajda je jazero a prírodné kúpalisko v Bratislave. <br>
+              Areál Kuchajdy sa nachádza sa v III. mestskom okrese v blízkosti železničnej stanice Bratislava Nové Mesto.<br> V blízkosti je taktiež <a class="href"href="https://vivo-shopping.com/sk/bratislava" >obchodné centrum Vivo!</a><br>
+              <br>
+              Areál kuchajdy je vhodný na Šport, Rekreáciu, Kúpanie ale aj aktivity z detmi.
+            </p>
           </div>
         </div>
       </div>
 
       <!-- FOOTER -->
       <footer>
+        
         <p>Author: Ur mom</p>
-        <p><a href="adamjokel2004@gmail.com">text</a></p>
+        <p><a href="">text</a></p>
       </footer>
     </div>
     <script>
