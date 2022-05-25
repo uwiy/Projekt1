@@ -49,23 +49,24 @@ body {
   border-radius: 20px;
   box-shadow: 0 5px 30px rgb(255 255 255 / 20%);
 }
-/*.bike {
-  width: 5%;
-  position: fixed;
-  margin-top: 176px;
-  transition: 20s;
-  animation: ride 10s infinite;
+.bike {
+  width: 75px;
+  position: absolute;
+  transition: 5s;
+  animation: ride 20s infinite;
+  top: 218px;
 }
+
 @keyframes ride {
   0% {
-    left: -120px;
+    left: -10%;
   }
 
   100% {
-    left: 2100px;
+    left: 110%;
   }
 }
- */
+
 .stats {
   margin-top: 24px;
 }
@@ -101,8 +102,14 @@ body {
 .card_text h1 {
   font-size: 20px;
 }
-.card_text strong {
+.card_text #easy {
   color: green;
+}
+.card_text #medium {
+  color: orange;
+}
+.card_text #hard {
+  color: darkred;
 }
 footer {
   text-align: right;
@@ -120,7 +127,7 @@ footer {
   margin: 50px;
   overflow: hidden;
   display: flex;
-  width: fit-content;
+  width: 700px;
   height: fit-content;
   flex-direction: column-reverse;
   align-items: flex-end;
@@ -128,6 +135,9 @@ footer {
 }
 .card_photo {
   float: right;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 .map {
   border-radius: 15px;
@@ -231,7 +241,8 @@ footer {
 }
 .href {
   text-decoration: none;
-  color: green;
+  color: darkblue;
+  font-style: italic;
 }
 /* SUIIIII */
 @font-face {
