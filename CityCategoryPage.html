@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mestské cyklotrasy - Bajkuj.sk</title>
-    <link rel="stylesheet" href="css/categories_style.css" />
+    <link rel="stylesheet" href="/Css/categories_style.css" />
     <link rel="icon" href="/images/favicon.png" type="image/jpg">
 
   </head>
@@ -31,7 +31,7 @@
                     <a href="/NearBACategoryPage.html">V okolí Bratislavy</a>
                   </li>
                 </ol>
-              <li class="menu-item"><a href="#0">O nás</a></li>
+              <li class="menu-item"><a href="#0">O⠀nás</a></li>
               
               </li>
 
@@ -46,15 +46,13 @@
         <h1>Mestské cyklotrasy:</h1>
       </div>
       <div class="page-content">
-        
-        <div class="grid">
-          <div class="grid__item">
+        <div class="grid__item">
             <div class="card">
               <img class="card__img" src="/images/1372091287_kuchajda-1.jpg" />
               <div class="card__content">
                 <h1 class="card__header">Jazero Kuchajda</h1>
                 <p class="card__text">
-                  Prijemná lokalita v Novo meste vhodná na relax, rekreáciu a
+                  Prijemná lokalita v Novom meste vhodná na relax, rekreáciu a
                   šport. V blízkosti je aj obchodné centrum Vivo.
                 </p>
                 <button
@@ -80,6 +78,7 @@
               </div>
             </div>
           </div>
+          
           <div class="grid__item">
             <div class="card">
               <img class="card__img" src="/images/images.png" />
@@ -240,7 +239,7 @@
               </div>
             </div>
           </div>
-        </div>
+        
       </div>
       <!-- FOOTER -->
       <footer>
@@ -248,26 +247,6 @@
         <p><a href="">text</a></p>
       </footer>
     </div>
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function (event) {
-        if (!event.target.matches(".select")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
-    </script>
+    
   </body>
 </html>

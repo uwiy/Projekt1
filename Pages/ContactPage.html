@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - Bajkuj.sk</title>
+    <link rel="stylesheet" href="/css/contact_style.css" />
+    <link rel="icon" href="/images/favicon.png" type="image/jpg">
+  </head>
+  <!-- HEADER-->
+  <body>
+    <div class="container">
+      
+      <div class="header">
+        
+        <div class="logo">
+          <img class="logoimg" src="/images/a.png" />
+        </div>
+        <img class="bike" src="/images/favicon.png" onclick="rotateElem()"/> 
+        <div class="buttons">
+          <nav class="menu">
+
+            <ol>
+              <li class="menu-item"><a href="/index.html">Home</a></li>
+              <li class="menu-item">
+                <a href="#0">Cyklotrasy</a>
+                <ol class="sub-menu">
+                  <li class="menu-item">
+                    <a href="/CityCategoryPage.html">Mestské Cyklotrasy</a>
+                  </li>
+                  <li class="menu-item"><a href="/MountainCategoryPage.html">Horské Cyklotrasy</a></li>
+                  <li class="menu-item">
+                    <a href="/NearBACategoryPage.html">V okolí Bratislavy</a>
+                  </li>
+                </ol>
+              <li class="menu-item"><a href="#0">O⠀nás</a></li>
+              
+              </li>
+
+              <li class="menu-item"><a href="#0">Contact</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- CONTENT-->
+     
+      
+    <div class="content">
+    
+     <div class="contact_card">
+         <div class="name">
+             <input type="text" name="formname" placeholder="Meno" required>
+         </div>
+             <div class="mail">
+                
+                <input type="text" name="formmail" placeholder="Mail" required>
+         </div>
+         <div class="comment">
+            
+            <textarea class="commenttext" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+         </div>
+
+         <button class="submit">Submit</button>
+     </div>
+     
+        
+    
+</div>
+
+      <!-- FOOTER -->
+      <footer>
+        
+        <p>Author: Ur mom</p>
+        <p><a href="">text</a></p>
+      </footer>
+    </div>
+    <script>
+    
+      /* Bike flip  */
+
+const $bike = document.querySelector('.bike');
+$bike.onclick = () => {
+  $bike.animate([
+    {transform: 'rotate(-360deg)'}
+  ],{ duration: 700,
+    } );
+}
+
+      /*function rotateElem() {
+            document.querySelector('.bikes').style.transform
+                       = 'rotate(-360deg)';
+                       
+                      
+                      
+        } */
+        
+    </script>
+  </body>
+</html>
