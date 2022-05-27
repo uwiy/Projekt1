@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>O nás - Bajkuj.sk</title>
+    <link rel="stylesheet" href="/css/about_style.css" />
+    <link rel="icon" href="/images/favicon.png" type="image/jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <!-- HEADER-->
+  <body>
+    <div class="container">
+      
+      <div class="header">
+        
+        <div class="logo">
+          <img class="logoimg" src="/images/a.png" />
+        </div>
+        <img class="bike" src="/images/favicon.png" onclick="rotateElem()"/> 
+        <div class="buttons">
+          <nav class="menu">
+
+            <ol>
+              <li class="menu-item"><a href="/index.html">Home</a></li>
+              <li class="menu-item">
+                <a href="#0">Cyklotrasy</a>
+                <ol class="sub-menu">
+                  <li class="menu-item">
+                    <a href="/CityCategoryPage.html">Mestské Cyklotrasy</a>
+                  </li>
+                  <li class="menu-item"><a href="/MountainCategoryPage.html">Horské Cyklotrasy</a></li>
+                  <li class="menu-item">
+                    <a href="/NearBACategoryPage.html">V okolí Bratislavy</a>
+                  </li>
+                </ol>
+              <li class="menu-item"><a href="/Pages/AboutPage.html">O⠀nás</a></li>
+              
+              </li>
+
+              <li class="menu-item"><a href="/Pages/ContactPage.html">Contact</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- CONTENT-->
+     
+      <h1 class="section-header">O nás</h1>
+    <div class="content">
+    
+ 
+   <div class="left_card">
+     <img class="adamko" src="/images/IMG_20210709_214612.jpg" width="280px" height="430px">
+   <p class="typingtext" id="left-text">Sme skupina profesionálnych cyklistov z Bratislavy <br> Túto stránku sme založily z účelom rozšíriť záujem o cyklistiku v celej Bratislave.</p> 
+  </div>
+  <div class="right_card">
+    <img class="adamko" src="/images/degesi.jpg" width="280px" height="430px">
+  <p class="typingtextright" id="right-text">Cyklistike sa venujeme už 20 rokov<br> A veríme že na našej stránke nájdete všetky potrebné informácie pre váš najbližší cyklovýlet.</p> 
+ </div>
+ 
+    
+        
+    
+     
+</div>
+
+      <!-- FOOTER -->
+      <!-- imagine using footer-->
+    </div>
+    <script>
+    
+      /* Bike flip  */
+
+const $bike = document.querySelector('.bike');
+$bike.onclick = () => {
+  $bike.animate([
+    {transform: 'rotate(-360deg)'}
+  ],{ duration: 700,
+    } );
+}
+
+        
+    </script>
+  </body>
+</html>

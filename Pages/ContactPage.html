@@ -6,6 +6,7 @@
     <title>Contact - Bajkuj.sk</title>
     <link rel="stylesheet" href="/css/contact_style.css" />
     <link rel="icon" href="/images/favicon.png" type="image/jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <!-- HEADER-->
   <body>
@@ -33,18 +34,18 @@
                     <a href="/NearBACategoryPage.html">V okolí Bratislavy</a>
                   </li>
                 </ol>
-              <li class="menu-item"><a href="#0">O⠀nás</a></li>
+              <li class="menu-item"><a href="/Pages/AboutPage.html">O⠀nás</a></li>
               
               </li>
 
-              <li class="menu-item"><a href="#0">Contact</a></li>
+              <li class="menu-item"><a href="/Pages/ContactPage.html">Contact</a></li>
             </ol>
           </nav>
         </div>
       </div>
       <!-- CONTENT-->
      
-      
+      <h1 class="section-header">Contact</h1>
     <div class="content">
     
      <div class="contact_card">
@@ -53,26 +54,35 @@
          </div>
              <div class="mail">
                 
-                <input type="text" name="formmail" placeholder="Mail" required>
+                <input type="email" name="formmail" placeholder="Mail" required>
          </div>
          <div class="comment">
             
-            <textarea class="commenttext" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            <textarea class="commenttext" rows="10" placeholder="Komentár" name="message" required></textarea>
          </div>
 
-         <button class="submit">Submit</button>
+         <button type="submit" class="submit" value="Submit" onclick="">Odoslať <span>&rarr;</span></button>
      </div>
-     
-        
     
+        
+     <div class="media_card">
+       <div class="ourmedia">
+       <div class="ourmail">
+      <p><i class="fa fa-envelope" aria-hidden="true"></i> amongus@sus.com</p>
+      </div>
+      <div class="ournum">
+        <p><i class="fa fa-phone" aria-hidden="true"></i> 0903 490 925</p>
+        </div>
+        <div class="ourloc">
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i> Vlčie hrdlo 16194, Ružinov</p>
+          </div>
+     </div>
+     <p id="copyright">© Bajkuj.sk ALL RIGHTS RESERVED</p>
+    </div>
 </div>
 
       <!-- FOOTER -->
-      <footer>
-        
-        <p>Author: Ur mom</p>
-        <p><a href="">text</a></p>
-      </footer>
+     
     </div>
     <script>
     
@@ -86,13 +96,7 @@ $bike.onclick = () => {
     } );
 }
 
-      /*function rotateElem() {
-            document.querySelector('.bikes').style.transform
-                       = 'rotate(-360deg)';
-                       
-                      
-                      
-        } */
+     
         
     </script>
   </body>

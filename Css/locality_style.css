@@ -3,14 +3,8 @@ body {
   font-family: "Sora", sans-serif;
 }
 .container {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(90, 92, 106, 1) 0%,
-    rgba(32, 45, 58, 1) 81.3%
-  );
-  box-sizing: border-box;
+  background-color: #161616;
 }
-
 .header {
   background-color: #000000;
   padding: 20px 10px;
@@ -118,9 +112,22 @@ footer {
   color: white;
   margin-top: 178px;
 }
+.ourmedia {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+#copyright {
+  color: rgb(97, 97, 97);
+  margin-right: 15px;
+  font-size: 12px;
+}
 .content_card {
   background-color: #8ec5fc;
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+
   padding: 0.8%;
   border-radius: 20px;
   box-shadow: 0 5px 30px rgb(0 0 0);
@@ -197,51 +204,18 @@ footer {
 .photos::-webkit-scrollbar-button {
   display: none;
 }
-/*
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  overflow: auto;
-  box-shadow: 0 5px 30px rgb(0 0 0 / 100%);
-  z-index: 1;
-  padding: 30px;
-  text-decoration: none;
-  font-size: 26px;
-  line-height: 25px;
-  border-radius: 10px;
-  background-color: rgb(58, 58, 58);
-  color: rgb(255, 255, 255);
-  margin: 0px 1px;
-  width: 20%;
-}
-
-.dropdown-content a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  color: white;
-}
-
-.dropdown a:hover {
-  background-color: #ddd;
-} 
-
-.show {
-  display: block; 
-} */
 
 .description {
   font-size: 18px;
-  font-style: oblique;
+  letter-spacing: 3px;
+  font: 300 18px "Oswald", sans-serif;
 }
 .title {
   font-size: 30px;
   text-align: center;
 }
 .href {
-  text-decoration: none;
-  color: darkblue;
+  color: rgb(0, 41, 224);
   font-style: italic;
 }
 /* SUIIIII */
@@ -276,7 +250,7 @@ a:after {
   transition-delay: 0.2s;
 }
 body {
-  background: #45494e;
+  background: black;
   font-family: "Varela Round", Nunito, Montserrat, sans-serif;
   margin: 0;
   padding: 0;

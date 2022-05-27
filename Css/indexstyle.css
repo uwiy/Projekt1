@@ -3,11 +3,8 @@ body {
   font-family: "Sora", sans-serif;
 }
 .container {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(90, 92, 106, 1) 0%,
-    rgba(32, 45, 58, 1) 81.3%
-  );
+  background-color: #161616;
+
   width: 100%;
   height: 100%;
   display: grid;
@@ -22,7 +19,7 @@ body {
   grid-column-start: 1;
   grid-column-end: 4;
   background-color: #000000;
-  background-image: url("images/cyklista.png");
+  background-image: url= "images/cyklista.png";
   border-bottom: #3c3c3c 60px solid;
   flex-direction: column;
   box-sizing: border-box;
@@ -337,7 +334,18 @@ footer {
   grid-column-end: 4;
   position: sticky;
 }
-
+.ourmedia {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+#copyright {
+  color: rgb(97, 97, 97);
+  margin-right: 15px;
+  font-size: 12px;
+}
 .show {
   display: block;
 }
@@ -577,13 +585,12 @@ body {
   border: 0.5px solid;
   border-image: conic-gradient(
       from var(--angle),
-      red,
-      yellow,
-      lime,
-      aqua,
-      blue,
-      magenta,
-      red
+      #fda085,
+      #bff098,
+      #1eae98,
+      #ea8d8d,
+      #d8b5ff,
+      #fe90af
     )
     1;
 

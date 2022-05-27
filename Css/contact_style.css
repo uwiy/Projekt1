@@ -1,13 +1,20 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  background-color: #161616;
+}
 body {
   margin: 0;
-  font-family: "Sora", sans-serif;
+  font-family: "Varela Round", Nunito, Montserrat, sans-serif;
 }
 .container {
-  background-image: radial-gradient(
+  /*background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgba(90, 92, 106, 1) 0%,
     rgba(32, 45, 58, 1) 81.3%
-  );
+  ); */
+  background-color: #161616;
   box-sizing: border-box;
 }
 
@@ -26,85 +33,112 @@ body {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 70px 0px;
+}
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px "Oswald", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }
 .contact_card {
-  background-color: #3c3c3c;
-  width: 500px;
-  height: 500px;
+  width: 505px;
+  height: 520px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
-  margin: 70px;
+  border-radius: 15px;
   gap: 15px;
 }
 
+textarea::placeholder {
+  color: white;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+}
+input::placeholder {
+  color: white;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+}
 .name > input {
-  background-color: black;
-  color: white;
-  width: 300px;
-  line-height: 3;
-  border-radius: 10px;
-  padding: 6px;
-}
-.mail > input {
-  background-color: black;
-  color: white;
-  width: 300px;
-  line-height: 3;
-  border-radius: 10px;
-  padding: 6px;
-}
-.comment .commenttext {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   width: 300px;
   line-height: 2;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 6px;
+  border: 0.1px white solid;
 }
-.comment > textarea {
-  writing-mode: horizontal-tb !important;
-  font-family: monospace;
-  text-rendering: auto;
-  color: -internal-light-dark(black, white);
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: start;
-  appearance: auto;
-  -webkit-rtl-ordering: logical;
-  resize: auto;
-  cursor: text;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-  column-count: initial !important;
-  margin: 0em;
-  border-width: 1px;
-  border-style: solid;
-  border-color: white;
-  border-image: initial;
-  padding: 2px;
-}
-.submit {
-  background-color: black;
+.mail > input {
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   width: 300px;
-  border-radius: 10px;
+  line-height: 2;
+  border-radius: 5px;
   padding: 6px;
+  border: 0.1px white solid;
+}
+.comment .commenttext {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 300px;
+  line-height: 1.5;
+  border-radius: 5px;
+  padding: 6px;
+  border: 1px white solid;
 }
 
-footer {
-  text-align: right;
-  padding: 3px;
-  background-color: rgb(0, 0, 0);
+.submit {
+  display: block;
+  width: 60%;
+  padding: 15px;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #0a0a0a;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.submit:active {
+  background-color: #494949;
+}
+.submit:hover {
+  background-color: #494949;
+}
+.media_card {
+  width: 505px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  gap: 15px;
+}
+.ourmail,
+.ournum,
+.ourloc {
   color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.ourmedia {
+  border-bottom: 1px white solid;
+}
+.fa {
+  font-size: 30px;
+}
+#copyright {
+  color: rgb(97, 97, 97);
 }
 
 .logo {
@@ -165,12 +199,7 @@ a:after {
   transition: 0.5s;
   transition-delay: 0.2s;
 }
-body {
-  background: #45494e;
-  font-family: "Varela Round", Nunito, Montserrat, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+
 .menu {
   margin: 15px;
 }
@@ -361,7 +390,8 @@ body {
   }
 }
 /* animated logo */
-.logoimg {
+.logoimg,
+.submit {
   --angle: 0deg;
 
   border: 0.5px solid;

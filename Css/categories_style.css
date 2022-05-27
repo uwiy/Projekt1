@@ -4,12 +4,7 @@ body {
   font-family: "Sora", sans-serif;
 }
 .container {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(90, 92, 106, 1) 0%,
-    rgba(32, 45, 58, 1) 81.3%
-  );
-  box-sizing: border-box;
+  background-color: #161616;
 }
 
 .header {
@@ -44,13 +39,14 @@ body {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font: 300 60px "Oswald", sans-serif;
 }
 
 .page-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 130px;
   margin: 10px;
 }
 footer {
@@ -59,6 +55,18 @@ footer {
   background-color: rgb(0, 0, 0);
   color: white;
   margin-top: 178px;
+}
+.ourmedia {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+#copyright {
+  color: rgb(97, 97, 97);
+  margin-right: 15px;
+  font-size: 12px;
 }
 
 :root {
@@ -284,7 +292,7 @@ a:after {
   cursor: pointer;
   transition: 0.2s;
   box-shadow: 0 5px 30px rgb(0 0 0 / 100%);
-  width: 555.8px;
+  width: 540px;
 }
 
 .card__img {

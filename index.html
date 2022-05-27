@@ -7,6 +7,8 @@
     <title>Home - Bajkuj.sk</title>
     <link rel="stylesheet" href="css/indexstyle.css" />
     <link rel="icon" href="/images/favicon.png" type="image/jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <!-- HEADER-->
   <body>
@@ -30,7 +32,7 @@
                     <a href="/NearBACategoryPage.html">V okolí Bratislavy</a>
                   </li>
                 </ol>
-              <li class="menu-item"><a href="#0">O⠀nás</a></li>
+              <li class="menu-item"><a href="/Pages/AboutPage.html">O⠀nás</a></li>
               
               </li>
 
@@ -103,30 +105,21 @@
       </div>
       <!-- FOOTER -->
       <footer>
-        <p>Author: Ur mom</p>
-        <p><a href="">text</a></p>
+        <div class="ourmedia">
+          <div class="ourmail">
+         <p><i class="fa fa-envelope" aria-hidden="true"></i> amongus@sus.com </p>
+         </div>
+         <div class="ournum">
+           <p><i class="fa fa-phone" aria-hidden="true"></i> 0903 490 925 </p> 
+           </div>
+           <div class="ourloc">
+             <p><i class="fa fa-map-marker" aria-hidden="true"></i> Vlčie hrdlo 16194, Ružinov</p> 
+             
+             </div>
+        </div>
+        <p id="copyright">© Bajkuj.sk ALL RIGHTS RESERVED</p>
+
       </footer>
     </div>
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function (event) {
-        if (!event.target.matches(".select")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
-    </script>
   </body>
 </html>
